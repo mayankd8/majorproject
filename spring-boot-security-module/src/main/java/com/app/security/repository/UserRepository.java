@@ -9,4 +9,5 @@ import com.app.security.dao.User;
 public interface UserRepository extends JpaRepository<User, Integer>{
 	 // return user 
 	User findByUsername(String Username) ; 
+	
 }

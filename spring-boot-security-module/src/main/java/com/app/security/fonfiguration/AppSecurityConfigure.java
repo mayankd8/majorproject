@@ -1,4 +1,4 @@
-package com.app.security.configuration;
+package com.app.security.fonfiguration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

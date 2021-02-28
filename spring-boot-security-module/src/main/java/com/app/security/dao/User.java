@@ -1,18 +1,9 @@
 package com.app.security.dao;
 
-import java.util.Set;
-
-import javax.management.relation.Role;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
 @Entity
 public class User {
 	
@@ -22,6 +13,19 @@ public class User {
 	
 	private String username;
 	private String password;
+	
+	
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public User(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+
 	public int getId() {
 		return id;
 	}
